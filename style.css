@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(107, 109, 107);
+  margin:0px;
+  padding:0px;
+}
+
+  header h1 {
+  margin-left: 20px;
+  float:left;
+
+}
+
+nav ul {
+  margin-left: 20;
+  float:left;
+
+}
+
+nav ul {
+  margin-left:30px;
+  padding: 8px;
+
+}
+
+nav a {
+  font-size:25px;
+  text-decoration-color: burlywood;
+  text-decoration: none;
+
+}
