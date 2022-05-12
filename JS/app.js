@@ -65,6 +65,7 @@ for(let i = 0; i < 5; i++){
   if(answerSix === '7'){
     alert('Correct');
     // eslint-disable-next-line no-undef
+    // eslint-disable-next-line no-unused-vars
     score++;
     break;
   } if(answerSix < 7){
@@ -78,29 +79,49 @@ for(let i = 0; i < 5; i++){
   }
 }
 
-let i = 0;
-let games = ['PS5', 'Nintendo'];
-let gameTypes = ['PS5', 'xBox', 'Nintendo', 'Rubix Cube'];
+// let i = 0;
+// let games = ['PS5', 'Nintendo'];
+// let gameTypes = ['PS5', 'xBox', 'Nintendo', 'Rubix Cube'];
 
-while(i < 6){
-  for(let x = 0; x < gameTypes.length; x++){
-    alert('Choices: '+ gameTypes[x]);
-  }
+// while(i < 6){
+//   for(let x = 0; x < gameTypes.length; x++){
+//     alert('Choices: '+ gameTypes[x]);
+//   }
 
-  let answerSeven = prompt('What kind of Systems do I have?');
-  i++;
+//   let answerSeven = prompt('What kind of Systems do I have?');
+//   i++;
 
-  if(games.includes(answerSeven)){
-    alert('Correct!');
-    score++;
-    break;
+//   if(games.includes(answerSeven)){
+//     alert('Correct!');
+//     score++;
+//     break;
 
-  } else {
-    alert('Incorrect');
-  }
-}
+//   } else {
+//     alert('Incorrect');
+//   }
+// }
 
-alert(`${userName}, your score is: ${score}!`);
+// alert(`${userName}, your score is: ${score}!`);
 
 // * https://guddbye.github.io/about-me/
 // * https://github.com/guddbye/about-me
+
+
+
+let gameSystems = ['xBox', 'Nintendo', 'PS5', 'Game Cube'];
+
+for(let i = 0; i < 4; i++) {
+  let gameTypes = prompt('Guess what game Systems I have.').toLowerCase();
+
+  for(let j = 0; j < gameSystems.length; j++) {
+
+    if(gameTypes === gameSystems [j]) {
+      alert('That is correct. I do have (those) systems.');
+      i = 6;
+      break;
+    }
+  }
+}
+
+alert(`Here are all possible systems. ${gameSystems}`);
+alert(`${userName}, your score is: ${score}!`);
