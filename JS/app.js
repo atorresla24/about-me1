@@ -66,7 +66,7 @@ for(let i = 0; i < 5; i++){
     alert('Correct');
     // eslint-disable-next-line no-undef
     score++;
-
+    break;
   } if(answerSix < 7){
     alert('Just a bit higher.');
 
@@ -93,6 +93,7 @@ while(i < 6){
   if(games.includes(answerSeven)){
     alert('Correct!');
     score++;
+    break;
 
   } else {
     alert('Incorrect');
